@@ -35,7 +35,7 @@ class Runner:
         for each in self.arr:
             # 수열은 비내림차순이다
             # 모은 값들 중 가장 뒤 값이 현재 넣으려고 하는 값보다 작아야 한다
-            if collected[-1] < each:
+            if collected[-1] > each:
                 # collected[-1] => len(collected)는 1 이상이어야 한다.
                 continue
             collected.append(each)
